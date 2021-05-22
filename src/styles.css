@@ -1,0 +1,23 @@
+@import url("./assets/css/components/_reset.css");
+
+:root {
+  --laranja: #ff8822;
+  --fundo: #fafafa;
+  --font-base: "Open Sans", sans-serif;
+  --size-body: 1rem;
+}
+
+body {
+  background-color: var(--fundo) !important;
+  font-family: var(--font-base) !important;
+  font-size: var(--font-base) !important;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.logo {
+  background-image: url("./assets/img/logo.svg");
+}
