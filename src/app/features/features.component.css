@@ -34,3 +34,17 @@ button.menu-button {
   margin-left: 115px;
   margin-bottom: 56px;
 }
+
+.sub-title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 100%;
+}
