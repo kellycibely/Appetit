@@ -1,1 +1,26 @@
-<p>home works!</p>
+<div class="container">
+    <div class="img-user-container">
+        <img class="home-logo" src="../../../assets/img/user.svg" alt="logo-appetit">
+    </div>
+    <div class="user-name-container">
+        <h3 class="user-name">Olá, {{userName}}</h3>
+        <hr class="line">
+    </div>
+
+    <button class="btn-new-order">
+        <span><img class="icon-plus" src="../../../assets/icons/add.svg" alt="logo-appetit"></span>
+        <span class="btn-text">FAZER NOVO PEDIDO</span>
+    </button>
+
+    <section class="search">
+        <p>
+            <mat-form-field [ngStyle]="{'width': '100%'}">
+                <mat-label>Procure o pedido aqui...</mat-label>
+                <img matPrefix class="icon-plus" src="../../../assets/icons/search.svg" alt="logo-appetit">
+                <input matInput placeholder="Procure o pedido aqui...">
+                <img matSuffix class="icon-plus" src="../../../assets/icons/filter.svg" alt="logo-appetit">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            </mat-form-field>
+        </p>
+    </section>
+</div>
