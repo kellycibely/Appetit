@@ -7,6 +7,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { Router } from '@angular/router';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(
@@ -37,12 +38,13 @@ export class LoginComponent implements OnInit {
     password: new FormControl(''),
   });
 
-  constructor() {}
+  constructor(private route: Router) {}
 
   ngOnInit(): void {}
 
   onSubmit() {
     console.warn(this.auth.value);
+    this.route.navigateByUrl('/home');
   }
 
   get f() {

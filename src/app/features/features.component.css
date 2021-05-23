@@ -1,0 +1,36 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  height: 100vh;
+}
+
+mat-sidenav {
+  background-color: #ff8822;
+}
+
+mat-sidenav-container {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #808080;
+}
+
+.mat-sidenav {
+  width: 342px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+button.menu-button {
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.home-logo {
+  width: 111px;
+  height: 79.71px;
+  margin-top: 56px;
+  margin-left: 115px;
+  margin-bottom: 56px;
+}

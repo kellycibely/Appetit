@@ -7,19 +7,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FeaturesComponent } from './features/features.component';
 import { LoginModule } from './login/login.module';
 
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
+import { MenuListItemComponent } from './features/ui/menu-list-item/menu-list-item.component';
+import { MenuListItemChildComponent } from './features/ui/menu-list-item-child/menu-list-item-child.component';
+import { MyCommonModule } from './ui/myCommon.module';
 
 @NgModule({
-  declarations: [AppComponent, FeaturesComponent],
+  declarations: [
+    AppComponent,
+    FeaturesComponent,
+    MenuListItemComponent,
+    MenuListItemChildComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LoginModule,
-
-    MatFormFieldModule,
-    MatInputModule,
+    MyCommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

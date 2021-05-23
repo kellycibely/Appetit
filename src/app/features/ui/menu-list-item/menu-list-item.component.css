@@ -1,0 +1,30 @@
+.twistie-separator {
+  flex: 1 1 0%;
+}
+
+.routeIcon {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16pt;
+}
+
+.menu-item-text {
+  font-size: 10pt;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.menu-twistie {
+  font-size: 10pt;
+  height: 12px;
+  width: 12px;
+}
+
+.mat-list-item.active {
+  background-color: #ffffff;
+  color: #ff8822;
+  height: 56px;
+}
