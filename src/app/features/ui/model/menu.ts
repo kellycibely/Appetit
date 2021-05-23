@@ -3,7 +3,7 @@ import { NavItem } from './nav-item';
 export let menu: NavItem[] = [
   {
     displayName: 'PEDIDOS',
-    iconName: 'group',
+    iconName: '../../../assets/icons/list.svg',
     route: 'home',
     children: [
       {
@@ -20,7 +20,7 @@ export let menu: NavItem[] = [
   },
   {
     displayName: 'CLIENTES',
-    iconName: 'face',
+    iconName: '../../../assets/icons/user.svg',
     route: '',
     children: [
       {

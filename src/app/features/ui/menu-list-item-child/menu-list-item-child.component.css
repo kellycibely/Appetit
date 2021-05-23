@@ -24,6 +24,16 @@
 }
 
 .mat-list-item.active {
-  color: #ffffff;
+  color: #ffffff !important;
   height: 56px;
+}
+
+.mat-list-item {
+  font-size: 10pt;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.54);
 }

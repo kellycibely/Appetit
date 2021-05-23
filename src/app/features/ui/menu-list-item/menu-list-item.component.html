@@ -1,8 +1,9 @@
 <a mat-list-item [ngStyle]="{'padding-left': (depth * 12) + 'px'}" (click)="onItemSelected(item)"
     [ngClass]="{'active': item.route ? router.isActive(item.route, true): false, 'expanded': expanded}"
     class="menu-list-item">
-    <mat-icon class="routeIcon">{{item.iconName}}</mat-icon>
-    <span class="menu-item-text">{{item.displayName}}</span>
+    <!-- <mat-icon class="routeIcon">{{item.iconName}}</mat-icon> -->
+    <img class="login-logo" class="routeIcon" src={{item.iconName}} alt="logo-appetit">
+    <span>{{item.displayName}}</span>
     <span fxflex class="twistie-separator"></span>
 </a>
 <div *ngIf="expanded">
