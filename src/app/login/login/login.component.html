@@ -3,25 +3,37 @@
     <h3 class="login-title">Seja bem-vindo!</h3>
     <p class="login-subtitle">Nós sabemos a importância de estar sempre de barriga cheia e o quanto isso pode ajudar no
         seu dia.</p>
-    <form>
+    <form [formGroup]="auth" (ngSubmit)="onSubmit()">
         <mat-form-field appearance="outline" class="login-form-email">
             <mat-label>
                 Email
             </mat-label>
-            <input class="login-input-email" type="email" matInput placeholder="Email" required>
+            <input formControlName="email" class="login-input-email" type="email" matInput placeholder="Email" required>
+            <mat-error *ngIf="f.email.hasError('email') && !f.email.hasError('required')">
+                Por favor digite um email válido
+            </mat-error>
+            <mat-error *ngIf="f.email.hasError('required')">
+                Email é <strong>obrigatório</strong>
+            </mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="outline" class="login-form-password">
             <mat-label>
                 Senha
             </mat-label>
-            <input type="password" matInput placeholder="Senha" required>
+            <input formControlName="password" type="{{passwordType}}" matInput placeholder="Senha" required>
+            <mat-icon class="icon-color" *ngIf="type" matSuffix (click)="visibility()">visibility</mat-icon>
+            <a></a>
+            <mat-icon class="icon-color" *ngIf="!type" matSuffix (click)="visibility()">visibility_off</mat-icon>
+            <mat-error *ngIf="f.password.hasError('required')">
+                Senha é <strong>obrigatória</strong>
+            </mat-error>
         </mat-form-field>
 
         <a class="login-recovery">RECUPERAR MINHA SENHA</a>
 
         <div class="btn-container">
-            <button class="login-button">Entrar</button>
+            <button [disabled]="!auth.valid" class="login-button">Entrar</button>
         </div>
     </form>
 

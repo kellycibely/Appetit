@@ -115,3 +115,12 @@
   color: #ff8822 !important;
   background-color: white;
 }
+
+/* icons customer */
+.icon-color {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.login-button:disabled {
+  background-color: #fddabb;
+}
