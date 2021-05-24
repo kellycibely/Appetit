@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "appetit"
+  "defaultProject": "appetit",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -18,6 +18,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./features/home/home.module').then((m) => m.HomeModule),
       },
+      {
+        path: 'sale',
+        loadChildren: () =>
+          import('./features/sale/sale.module').then((m) => m.SaleModule),
+      },
     ],
   },
 ];

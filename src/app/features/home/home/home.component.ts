@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as clients from '../../../fakeResponse/clients.json';
+import { Router } from '@angular/router';
 import * as orders from '../../../fakeResponse/orders.json';
 
 @Component({
@@ -10,15 +10,15 @@ import * as orders from '../../../fakeResponse/orders.json';
 export class HomeComponent implements OnInit {
   userName = 'Kelly Cibely';
 
-  clientsList: any = (clients as any).default;
   ordersList: any = (orders as any).default;
-  constructor() {}
+  constructor(private route: Router) {}
 
   ngOnInit(): void {
     console.log(this.ordersList);
   }
 
   teste(id) {
+    this.route.navigateByUrl('sale/detail/' + id);
     console.log(id);
   }
 }

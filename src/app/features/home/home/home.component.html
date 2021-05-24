@@ -27,7 +27,7 @@
                 <span class="order-subtitle"> Você vendeu </span>
                 <span class="order-title">{{order.total | currency : 'R$'}}</span>
 
-                <div class="card" *ngFor="let sale of order.orders" (click)="teste(sale.id)">
+                <div class="card" *ngFor="let sale of order.orders" (click)="teste(sale.clientId)">
                     <div class="card-img">
                         <img class="home-logo" src="../../../assets/img/user.svg" alt="logo-appetit">
                     </div>

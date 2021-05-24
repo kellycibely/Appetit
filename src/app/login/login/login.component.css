@@ -6,8 +6,16 @@
   margin-right: 25%;
 }
 
+.logo-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .login-logo {
   margin-top: 15%;
+  width: 111px;
+  height: 79.71px;
 }
 
 .login-title {

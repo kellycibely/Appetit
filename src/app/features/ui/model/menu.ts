@@ -21,18 +21,6 @@ export let menu: NavItem[] = [
   {
     displayName: 'CLIENTES',
     iconName: '../../../assets/icons/user.svg',
-    route: '',
-    children: [
-      {
-        displayName: 'Listar Colaboradores',
-        iconName: 'list',
-        route: '',
-      },
-      {
-        displayName: 'Adicionar Colaboradores',
-        iconName: 'add_box',
-        route: '',
-      },
-    ],
+    route: 'sale',
   },
 ];
