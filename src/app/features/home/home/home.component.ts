@@ -16,7 +16,11 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  teste(id) {
+  detail(id) {
     this.route.navigateByUrl('sale/detail/' + id);
+  }
+
+  new() {
+    this.route.navigateByUrl('sale/new');
   }
 }

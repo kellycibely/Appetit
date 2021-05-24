@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OrderComponent } from './sale/order.component';
+import { OrderComponent } from './order/order.component';
 import { RouterModule } from '@angular/router';
+import { OrderNewComponent } from './order-new/order-new.component';
 
 export const routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'detail' },
+  { path: '', pathMatch: 'full', redirectTo: 'new' },
   {
     path: 'detail/:id',
     component: OrderComponent,
@@ -12,10 +13,17 @@ export const routes = [
       breadcrumb: 'Detail',
     },
   },
+  {
+    path: 'new',
+    component: OrderNewComponent,
+    data: {
+      breadcrumb: 'new',
+    },
+  },
 ];
 
 @NgModule({
-  declarations: [OrderComponent],
+  declarations: [OrderComponent, OrderNewComponent],
   imports: [CommonModule, RouterModule, RouterModule.forChild(routes)],
 })
 export class OrderModule {}
