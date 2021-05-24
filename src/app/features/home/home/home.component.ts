@@ -14,11 +14,9 @@ export class HomeComponent implements OnInit {
   constructor(private route: Router) {}
 
   ngOnInit(): void {
-    console.log(this.ordersList);
   }
 
   teste(id) {
     this.route.navigateByUrl('sale/detail/' + id);
-    console.log(id);
   }
 }

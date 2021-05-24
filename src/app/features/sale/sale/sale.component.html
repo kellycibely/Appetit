@@ -1,1 +1,30 @@
-<p>sale works!</p>
+<div class="container">
+    <div class="img-user-container">
+        <img class="home-logo" src="../../../assets/img/user.svg" alt="logo-appetit">
+    </div>
+    <div class="user-name-container" (click)="back()">
+        <img class="home-logo" src="../../../assets/icons/back.svg" alt="logo-appetit">
+        <h3 class="user-name">Pedidos de {{client.name}}</h3>
+        <hr class="line">
+    </div>
+
+    <section class="order-list">
+        <div *ngFor="let order of client.simpleOrders" class="orders">
+            <span class="order-title">{{order.date}}</span>
+
+            <div class="card">
+                <div class="card-img">
+                    <img class="order-img" src="{{order.image}}" alt="logo-appetit">
+                </div>
+                <div class="card-sale-description">
+                    <h6 class="card-description">
+                        {{order.description}}
+                    </h6>
+                    <p class="card-order-total">
+                        {{order.total | currency : 'R$'}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

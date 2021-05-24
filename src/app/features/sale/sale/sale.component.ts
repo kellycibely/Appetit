@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
+import * as clients from '../../../fakeResponse/clients.json';
+import { Client } from '../../model/client';
 
 @Component({
   selector: 'app-sale',
@@ -6,10 +10,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sale.component.css']
 })
 export class SaleComponent implements OnInit {
+  id: number;
+  private sub: any;
+  client: Client;
+  
+  clientsList: any = (clients as any).default;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private router: Router) { 
+    this.route.params.subscribe(params => {
+      this.id = params['id'];
+    });
+    this.client = this.clientsList.filter(client => client.id == this.id)[0]
+  }
 
   ngOnInit(): void {
+  }
+
+  back() {
+    this.router.navigateByUrl('home');
   }
 
 }
