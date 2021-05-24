@@ -11,6 +11,8 @@ import { MenuListItemComponent } from './features/ui/menu-list-item/menu-list-it
 import { MenuListItemChildComponent } from './features/ui/menu-list-item-child/menu-list-item-child.component';
 import { MyCommonModule } from './ui/myCommon.module';
 
+import { httpInterceptorProviders } from './interceptors/httpInterceptorProviders';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,7 @@ import { MyCommonModule } from './ui/myCommon.module';
     LoginModule,
     MyCommonModule,
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

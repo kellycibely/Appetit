@@ -21,5 +21,30 @@
                 <img matSuffix class="icon-plus" src="../../../assets/icons/filter.svg" alt="logo-appetit">
             </mat-form-field>
         </p>
+        <section>
+            <div *ngFor="let order of ordersList" class="orders">
+                <span class="order-title">{{order.date}},</span>
+                <span class="order-subtitle"> Você vendeu </span>
+                <span class="order-title">{{order.total | currency : 'R$'}}</span>
+
+                <div class="card" *ngFor="let sale of order.orders" (click)="teste(sale.id)">
+                    <div class="card-img">
+                        <img class="home-logo" src="../../../assets/img/user.svg" alt="logo-appetit">
+                    </div>
+                    <div class="card-sale-description">
+                        <h6 class="card-client-name">
+                            {{sale.name}}
+                        </h6>
+                        <p class="card-description">
+                            {{sale.description}}
+                        </p>
+                    </div>
+                    <div class="card-total">
+                        {{sale.value | currency : 'R$'}}
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </section>
 </div>
