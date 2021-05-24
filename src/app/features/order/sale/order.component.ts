@@ -5,11 +5,11 @@ import * as clients from '../../../fakeResponse/clients.json';
 import { Client } from '../../model/client';
 
 @Component({
-  selector: 'app-sale',
-  templateUrl: './sale.component.html',
-  styleUrls: ['./sale.component.css']
+  selector: 'app-order',
+  templateUrl: './order.component.html',
+  styleUrls: ['./order.component.css']
 })
-export class SaleComponent implements OnInit {
+export class OrderComponent implements OnInit {
   id: number;
   private sub: any;
   client: Client;

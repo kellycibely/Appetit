@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SaleComponent } from './sale/sale.component';
+import { OrderComponent } from './sale/order.component';
 import { RouterModule } from '@angular/router';
 
 export const routes = [
   { path: '', pathMatch: 'full', redirectTo: 'detail' },
   {
     path: 'detail/:id',
-    component: SaleComponent,
+    component: OrderComponent,
     data: {
-      breadcrumb: 'Add Contact',
+      breadcrumb: 'Detail',
     },
   },
 ];
 
 @NgModule({
-  declarations: [SaleComponent],
+  declarations: [OrderComponent],
   imports: [CommonModule, RouterModule, RouterModule.forChild(routes)],
 })
-export class SaleModule {}
+export class OrderModule {}

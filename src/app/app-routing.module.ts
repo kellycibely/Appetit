@@ -21,7 +21,7 @@ const routes: Routes = [
       {
         path: 'sale',
         loadChildren: () =>
-          import('./features/sale/sale.module').then((m) => m.SaleModule),
+          import('./features/order/order.module').then((m) => m.OrderModule),
       },
     ],
   },
