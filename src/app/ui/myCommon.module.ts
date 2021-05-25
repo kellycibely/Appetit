@@ -24,6 +24,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [],
@@ -84,7 +85,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatCheckboxModule,
     MatButtonModule,
     MatDividerModule,
+    MatRadioModule,
   ],
   providers: [DatePipe],
 })
-export class MyCommonModule {}
+export class MyCommonModule { }

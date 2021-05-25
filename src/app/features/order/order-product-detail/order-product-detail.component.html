@@ -1,0 +1,31 @@
+<div class="title-order-container">
+    <img src="../../../assets/icons/back.svg" alt="logo-appetit">
+    <h3 class="user-name">Detalhes do pedido</h3>
+    <hr class="line">
+    <p class="subtitle-new-order">Aproveite para adicionar alguma observação para este pedido, caso queira.</p>
+</div>
+
+<div class="">
+    <div class="card">
+        <div class="card-img">
+            <img class="order-img" src="{{productSelected.image}}" alt="logo-appetit">
+        </div>
+        <div class="card-sale-description">
+            <h6 class="card-description font-title">
+                {{productSelected.name}}
+            </h6>
+            <p class="card-order-total font">
+                {{productSelected.value | currency : 'R$'}}
+            </p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="form-product">
+        <h6 class="font-title">Opções</h6>
+        <h6 class="font">Escolha dentre as opções de massas abaixo.</h6>
+    </div>
+</div>
+
+<app-order-product-data  (productObservation)="receiveproductObservation($event)"  [productSelected]=productSelected></app-order-product-data>

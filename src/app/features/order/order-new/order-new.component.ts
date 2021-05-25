@@ -26,7 +26,10 @@ export class OrderNewComponent implements OnInit {
 
   receiveProduct(variation) {
     this.productSelected = variation;
-    console.log(variation);
+  }
+
+  receiveproductObservation(productObservation) {
+    console.log(productObservation);
   }
 
 }

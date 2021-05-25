@@ -15,6 +15,7 @@
         </div>
 
         <app-inf-order *ngIf="!productSelected" (product)="receiveProduct($event)"></app-inf-order>
+         <app-order-product-detail (productObservation)="receiveproductObservation($event)" *ngIf="productSelected" [productSelected]=productSelected></app-order-product-detail>
     </section>
 </div>
 

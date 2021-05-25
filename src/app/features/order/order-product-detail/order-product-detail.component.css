@@ -1,0 +1,97 @@
+.container {
+    padding-left: 40px;
+    width: auto;
+    height: 100% !important;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid red;
+}
+
+.user-name {
+    margin-bottom: 8px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.line {
+    width: 228px;
+    height: 2px;
+    background: #ff8822;
+    margin-left: 0;
+}
+
+.title-order-container {
+    margin-top: 1rem;
+    margin-left: 40px;
+}
+
+.subtitle-new-order {
+    margin-top: 3rem;
+    width: 85%;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.card {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+
+    margin-top: 2rem;
+    margin-left: 40px;
+}
+
+.card-img {
+    margin: 16px;
+}
+
+.card-description {
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 0 !important;
+    margin-top: 10px !important;
+}
+
+.card-order-total {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.font {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.font-title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.form-product {
+    margin-top: 2rem;
+    margin-left: 40px;
+}
+

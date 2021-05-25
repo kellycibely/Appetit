@@ -1,0 +1,25 @@
+<div class="card-pasta-container">
+    <mat-radio-group [(ngModel)]="activePasta" name="pasta" aria-label="Select an pasta">
+        <mat-radio-button class="card-pasta" *ngFor="let p of productSelected.pasta" [value]="p">{{p}}
+        </mat-radio-button>
+    </mat-radio-group>
+</div>
+<div>
+    <hr class="line-products">
+</div>
+
+<div class="card-obs">
+    <h6 class="obs-title">Observações</h6>
+    <input [(ngModel)]="observation" class="obs" type="text" placeholder="Observações" width="100%">
+</div>
+<div class="actions" *ngIf="activePasta">
+    <div class="order_quantity">
+    <span class="space remove"  (click)="remove()"><img src="../../../assets/icons/minus.svg" alt="minus"></span>
+    <span>{{quantity}}</span>
+    <span class="space" (click)="add()"><img src="../../../assets/icons/add.svg" alt="add"></span>
+    </div>
+    <div class="btn_next" (click)="select()">
+      <span>Avançar</span>
+      <span> {{total | currency: 'R$'}}</span>  
+    </div>
+</div>
