@@ -1,0 +1,25 @@
+<section class="product-list">
+    <form class="product-form">
+        <h6 class="form-title">O que você está vendendo?</h6>
+        <p>
+            <mat-form-field [ngStyle]="{'width': '100%'}">
+                <mat-label>Procure o produto aqui...</mat-label>
+                <img matPrefix class="icon-plus" src="../../../assets/icons/search.svg" alt="logo-appetit">
+                <input matInput placeholder="Procure o pedido aqui...">
+            </mat-form-field>
+        </p>
+    </form>
+
+    <div class="prodcts" *ngFor="let p of productsList; let i = index">
+        <p class="form-title product-form">{{p.type}}</p>
+        <div *ngFor="let v of p.variation; let i = index" class="variation">
+            <div class="variation-container" (click)="detail(v)">
+                <span class="variation-img"> <img class="home-logo" src={{v.image}} alt="logo-appetit"></span>
+                <span class="variation-name">{{v.name}}</span>
+                <span class="variation-value">{{v.value | currency: 'R$'}}</span>
+            </div>
+            <hr *ngIf="i +1 != p.variation.length" class="variarion-line">
+        </div>
+        <hr *ngIf="i +1 != productsList.length" class="line-products">
+    </div>
+</section>

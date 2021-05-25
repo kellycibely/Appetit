@@ -1,8 +1,5 @@
 <div class="container">
     <section class="resume">
-        <!-- <div class="img-user-container">
-            <img class="home-logo" src="../../../assets/img/user.svg" alt="logo-appetit">
-        </div> -->
         <div class="user-name-container" >
             <img class="home-logo" src="../../../assets/icons/back.svg" alt="logo-appetit">
             <h3 class="user-name">Novo pedido</h3>
@@ -12,7 +9,12 @@
         </div>
     </section>
 
-    <section class="new">
+    <section class="new-order">
+        <div class="img-user-container">
+            <img class="home-logo" src="../../../assets/img/user.svg" alt="logo-appetit">
+        </div>
+
+        <app-inf-order *ngIf="!productSelected" (product)="receiveProduct($event)"></app-inf-order>
     </section>
 </div>
 

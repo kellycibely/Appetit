@@ -1,0 +1,17 @@
+<div class="title-order-container">
+    <img src="../../../assets/icons/back.svg" alt="logo-appetit">
+    <h3 class="user-name">Informações para o pedido</h3>
+    <hr class="line">
+    <p class="subtitle-new-order">Preencha as informações abaixo para concluir esta venda.</p>
+</div>
+
+<div class="progress-container">
+    <p>Passo 1 de 3</p>
+
+    <div class="wrapper">
+        <div class="progress-bar">
+            <span class="progress-bar-fill" [ngStyle]="{'width': size + '%'}" ></span>
+        </div>
+    </div>
+</div>
+<app-order-product (product)="receiveProduct($event)"></app-order-product>
