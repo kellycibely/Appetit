@@ -14,4 +14,5 @@
         </div>
     </div>
 </div>
-<app-order-product (product)="receiveProduct($event)" (nextProduct)="receiveNextProduct($event)" [summaryProduct]=_summaryProduct></app-order-product>
+<app-order-product *ngIf="!_nextProduct" (product)="receiveProduct($event)" (nextProduct)="receiveNextProduct($event)" [summaryProduct]=_summaryProduct></app-order-product>
+<app-order-clients *ngIf="_nextProduct" (_clientSelected)="receiveNextClient($event)"></app-order-clients>

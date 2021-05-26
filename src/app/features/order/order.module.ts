@@ -10,6 +10,7 @@ import { OrderProductComponent } from './order-product/order-product.component';
 import { InfOrderComponent } from './inf-order/inf-order.component';
 import { OrderProductDetailComponent } from './order-product-detail/order-product-detail.component';
 import { OrderProductDataComponent } from './order-product-data/order-product-data.component';
+import { OrderClientsComponent } from './order-clients/order-clients.component';
 
 
 export const routes = [
@@ -31,7 +32,7 @@ export const routes = [
 ];
 
 @NgModule({
-  declarations: [OrderComponent, OrderNewComponent, OrderProductComponent, InfOrderComponent, OrderProductDetailComponent, OrderProductDataComponent],
+  declarations: [OrderComponent, OrderNewComponent, OrderProductComponent, InfOrderComponent, OrderProductDetailComponent, OrderProductDataComponent, OrderClientsComponent],
   imports: [CommonModule, RouterModule, RouterModule.forChild(routes), MyCommonModule],
 })
 export class OrderModule { }

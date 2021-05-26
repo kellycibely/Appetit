@@ -11,11 +11,14 @@ export class InfOrderComponent implements OnInit {
 
   productSelected: string;
   _nextProduct: any;
+  _clientSelected: any;
 
   @Output() product = new EventEmitter();
   _summaryProduct: any;
 
   @Output() nextProduct = new EventEmitter();
+
+  @Output() clientSelected = new EventEmitter();
 
   @Input()
   set summaryProduct(summaryProduct: string) {
@@ -27,6 +30,7 @@ export class InfOrderComponent implements OnInit {
     constructor() { }
 
     ngOnInit(): void {
+  
     }
 
     receiveProduct(variation) {
@@ -36,7 +40,14 @@ export class InfOrderComponent implements OnInit {
 
     receiveNextProduct(nextProduct) {
       this._nextProduct = nextProduct;
+      this.size = 66.6 ;
       this.nextProduct.emit(nextProduct);
+    }
+
+    receiveNextClient(clientSelected) {
+      this._clientSelected = clientSelected;
+      this.size = 100 ;
+      this.clientSelected.emit(clientSelected);
     }
 
   }

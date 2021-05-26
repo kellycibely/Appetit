@@ -20,12 +20,33 @@
                 <div class="summary-product">
                     <span><img class="product-image" src="{{summaryProduct.image}}" alt="logo-appetit"></span>
                     <span class="summary-product-description">{{summaryProduct.description}}</span>
-                    <span>{{summaryProduct.price | currency: 'R$'}}</span>
+                    <span>{{summaryProduct.price / summaryProduct.quantity | currency: 'R$'}}</span>
                 </div>
                 <h6 class="summary-product-observation">{{summaryProduct.observation}}</h6>
             </div>
         </div>
         <hr class="line-products">
+
+        <div class="summary-clients" *ngIf="clientSelected.length > 1">
+            <h4 class="client-text">Clientes</h4>
+            <div class="card-client-container" *ngFor="let c of clientSelected; let i=index">
+                <div class="card-client">
+                    <span><img class="client-image" src="../../../assets/img/user.svg"
+                        alt="logo-appetit"></span>
+                <span class="client-name">{{c.name}}</span>
+                </div>
+                <hr class="client-line">
+            </div>
+        </div>
+        <hr *ngIf="clientSelected.length > 1" class="line-products">
+        <div class="total">
+            <span>
+                <h4 class="total-label">Total</h4>
+            </span>
+            <span>
+                <h4 class="total-price">{{summaryProduct.price | currency: 'R$'}}</h4>
+            </span>
+        </div>
     </section>
 
     <section class="new-order">
@@ -34,7 +55,8 @@
         </div>
 
         <app-inf-order *ngIf="!productSelected || summaryProduct" (product)="receiveProduct($event)"
-            [summaryProduct]=summaryProduct (nextProduct)="receiveNextProduct($event)"></app-inf-order>
+            [summaryProduct]=summaryProduct (nextProduct)="receiveNextProduct($event)"
+            (clientSelected)="receiveNextClient($event)"></app-inf-order>
         <app-order-product-detail (productObservation)="receiveproductObservation($event)"
             *ngIf="productSelected && !summaryProduct" [productSelected]=productSelected></app-order-product-detail>
     </section>

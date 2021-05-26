@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import * as products from '../../../fakeResponse/products.json';
+import * as simpleClients from '../../../fakeResponse/simpleClients.json';
 
 @Component({
   selector: 'app-order-new',
@@ -11,11 +12,13 @@ import * as products from '../../../fakeResponse/products.json';
 export class OrderNewComponent implements OnInit {
 
   productsList: any = (products as any).default;
+  oldClientsList: any = (simpleClients as any).default;
 
   productSelected: any;
 
   summaryProduct: any;
   nextProduct: boolean = false;
+  clientSelected: Array<any> = [];
 
   constructor(private route: Router) { }
 
@@ -43,6 +46,7 @@ export class OrderNewComponent implements OnInit {
       image: productObservation.image,
       observation: productObservation.observation,
       price: productObservation.total,
+      quantity: productObservation.quantity,
     }
 
     this.summaryProduct = summary; 
@@ -51,6 +55,18 @@ export class OrderNewComponent implements OnInit {
   receiveNextProduct(nextProduct) {
     this.nextProduct = nextProduct;
     console.log(nextProduct)
+  }
+
+  receiveNextClient(clientSelected) {
+    let count = 0
+    console.log(this.oldClientsList)
+    const newListClient: Array<any> = [];
+    clientSelected.forEach(c => {
+      let oldClient = this.oldClientsList.filter(oldClient => oldClient.id === c.id)[0];
+      newListClient.push(oldClient)
+    });
+    this.clientSelected = newListClient;
+    console.log(this.clientSelected)
   }
 
 }

@@ -1,0 +1,26 @@
+<section class="clients-list">
+    <form class="client-form">
+        <h6 class="form-title">O que você está vendendo?</h6>
+        <p>
+            <mat-form-field [ngStyle]="{'width': '100%'}">
+                <mat-label>Procure o cliente aqui...</mat-label>
+                <img matPrefix class="icon-plus" src="../../../assets/icons/search.svg" alt="logo-appetit">
+                <input matInput placeholder="Procure o pedido aqui...">
+            </mat-form-field>
+        </p>
+    </form>
+
+    <div *ngFor="let c of clientsList; let i = index">
+        <div class="clients" (click)="add(c)">
+            <span class="client-img"> <img class="home-logo" src={{c.image}} alt="logo-appetit"></span>
+            <span class="client-name">{{c.name}}</span>
+        </div>
+        <hr *ngIf="i +1 != c.length" class="line">
+    </div>
+
+    <div *ngIf="clientSelected.length >= 1" class="actions" (click)="next()">
+        <span class="client-quantity">{{clientSelected.length}} clientes selecionados</span>
+        <span class="btn_next"> Avançar  <img matPrefix class="icon-next" src="../../../assets/icons/shape.svg" alt="logo-appetit"></span>
+    </div>
+
+</section>

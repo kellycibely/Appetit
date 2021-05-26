@@ -219,6 +219,8 @@
 }
 .line-products {
     height: 8px;
+    margin-top: 20px;
+
     background: rgba(0, 0, 0, 0.08);
 }
 
@@ -268,4 +270,71 @@
     height: 8px;
     background: rgba(0, 0, 0, 0.08);
     width: 100%;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.total-label {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.total-price {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.summary-clients {
+    margin-left: 40px;
+    margin-top: 2rem;
+}
+
+.card-client {
+    display: flex;
+    align-items: center;
+}
+
+.client-image {
+    margin-right: 15px;
+}
+
+.client-name {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.client-line {
+    border-color: rgba(0, 0, 0, 0.08);
+    width: 96%;
+}
+
+.client-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: rgba(0, 0, 0, 0.88);
 }

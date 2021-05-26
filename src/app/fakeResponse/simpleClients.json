@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Justine Marshall",
+        "image" : "../../../assets/img/user.svg"
+    },
+    {
+        "id": 2,
+        "name": "Bairam Frootan Ronai",
+        "image" : "../../../assets/img/user1.svg"
+    },
+    {
+        "id": 3,
+        "name": "Tua Manuera",
+        "image" : "../../../assets/img/user2.svg"
+    },
+    {
+        "id": 4,
+        "name": "Justine Marshall",
+        "image" : "../../../assets/img/user3.svg"
+    },
+    {
+        "id": 5,
+        "name": "Bairam Frootan Luc",
+        "image" : "../../../assets/img/user1.svg"
+    },
+    {
+        "id": 6,
+        "name": "Justine Marshall Zoia",
+        "image" : "../../../assets/img/user.svg"
+    },
+    {
+        "id": 7,
+        "name": "Tua Manuera Lub",
+        "image" : "../../../assets/img/user2.svg"
+    }
+]
