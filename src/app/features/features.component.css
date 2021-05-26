@@ -51,3 +51,68 @@ button.menu-button {
   bottom: 30px;
   margin-left: 3%;
 }
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 !important;
+}
+
+.orders {
+  background-color: #ffffff;
+  height: 56px;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.clients {
+  height: 56px;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icons {
+  margin-left: 12%;
+  color: #ffffff;
+}
+
+.text-active {
+  margin-left: 6%;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+
+  text-transform: uppercase;
+
+  color: #ff8822;
+}
+
+.text {
+  margin-left: 6%;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+
+  text-transform: uppercase;
+
+  color: #ffffffc0;
+}
+
+.chield-active {
+  color: #ffffff;
+}
+
+.childs {
+  margin-left: 5%;
+}

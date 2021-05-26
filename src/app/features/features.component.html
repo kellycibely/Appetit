@@ -2,7 +2,27 @@
     <mat-sidenav #sidenav mode="side" [opened]="opened">
         <img class="home-logo" src="../../../assets/img/Home_page.svg" alt="logo-appetit">
         <mat-nav-list>
-            <app-menu-list-item *ngFor="let item of menu" [item]="item"></app-menu-list-item>
+            <div class="container">
+                <div class="orders">
+                    <span class="icons"><img src="../../../assets/icons/list.svg" alt="logo-appetit"></span>
+                    <span class="text-active">Pedidos</span>
+                </div>
+                <div class="childs">
+                    <div class="clients">
+                        <span class="icons">|</span>
+                        <span class="text chield-active">EM ABERTOS</span>
+                    </div>
+                    <div class="clients">
+                        <span class="icons">|</span>
+                        <span class="text">EMCERRADOS</span>
+                    </div>
+                    
+                </div>
+                <div class="clients">
+                    <span class="icons"><img src="../../../assets/icons/user.svg" alt="logo-appetit"></span>
+                    <span class="text">Clientes</span>
+                </div>
+            </div>
         </mat-nav-list>
         <footer>
             <p class="sub-title">Infoway Gestão em Saúde ©, 2019.</p>

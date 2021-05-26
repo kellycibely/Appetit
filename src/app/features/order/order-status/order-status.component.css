@@ -85,7 +85,7 @@ mat-datepicker-toggle {
     justify-content: flex-end;
 }
 
-.login-button {
+.button {
     padding: 15px;
     width: 50%;
     margin-right: 15%;
@@ -100,6 +100,10 @@ mat-datepicker-toggle {
 
     color: #ffffff;
 }
+
+.button:disabled {
+    background-color: #fddabb;
+  }
 
 .login-button:focus {
     outline-style: none;
