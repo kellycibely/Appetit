@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     console.warn(this.auth.value);
-    this.route.navigateByUrl('/home');
+    this.route.navigateByUrl('/home/1');
   }
 
   get f() {

@@ -28,7 +28,7 @@ export class OrderComponent implements OnInit {
   }
 
   back() {
-    this.router.navigateByUrl('home');
+    this.router.navigateByUrl('home/1');
   }
 
 

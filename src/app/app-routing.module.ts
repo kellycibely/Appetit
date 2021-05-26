@@ -14,7 +14,7 @@ const routes: Routes = [
     component: FeaturesComponent,
     children: [
       {
-        path: 'home',
+        path: 'home/:id',
         loadChildren: () =>
           import('./features/home/home.module').then((m) => m.HomeModule),
       },
@@ -28,7 +28,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

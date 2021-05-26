@@ -26,7 +26,8 @@ export class OrderProductComponent implements OnInit {
         if (product.id == this._summaryProduct.idProduct) {
           product.variation.forEach(variation => {
             if (variation.id == this._summaryProduct.id) {
-              variation.image = "../../../assets/icons/checked.svg";
+              variation.imageCheck = "../../../assets/icons/checked.svg";
+              variation.status = true;
             }
           });
         }

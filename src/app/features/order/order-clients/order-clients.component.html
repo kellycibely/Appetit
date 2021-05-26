@@ -12,7 +12,7 @@
 
     <div *ngFor="let c of clientsList; let i = index">
         <div class="clients" (click)="add(c)">
-            <span class="client-img"> <img class="home-logo" src={{c.image}} alt="logo-appetit"></span>
+            <span class="client-img"> <img class="home-logo" src={{c.imageCheck}} alt="logo-appetit"></span>
             <span class="client-name">{{c.name}}</span>
         </div>
         <hr *ngIf="i +1 != c.length" class="line">

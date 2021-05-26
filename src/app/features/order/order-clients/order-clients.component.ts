@@ -33,7 +33,7 @@ export class OrderClientsComponent implements OnInit {
     this.clientsList.forEach(client => {
       this.clientSelected.forEach(selected => {
         if (client.id == selected.id) {
-          client.image = "../../../assets/icons/checked.svg";
+          client.imageCheck = "../../../assets/icons/checked.svg";
         }
       });
     });

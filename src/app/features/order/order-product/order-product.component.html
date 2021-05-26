@@ -14,7 +14,8 @@
         <p class="form-title product-form">{{p.type}}</p>
         <div *ngFor="let v of p.variation; let i = index" class="variation">
             <div class="variation-container" (click)="detail(v)">
-                <span class="variation-img"> <img class="home-logo" src={{v.image}} alt="logo-appetit"></span>
+                <span *ngIf="v.status" class="variation-img"> <img class="home-logo" src={{v.imageCheck}} alt="logo-appetit"></span>
+                <span *ngIf="!v.status" class="variation-img"> <img class="home-logo" src={{v.image}} alt="logo-appetit"></span>
                 <span class="variation-name">{{v.name}}</span>
                 <span class="variation-value">{{v.value | currency: 'R$'}}</span>
             </div>

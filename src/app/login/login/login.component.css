@@ -132,3 +132,10 @@
 .login-button:disabled {
   background-color: #fddabb;
 }
+
+@media screen and (max-width: 800px) { 
+  .login-body{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}

@@ -31,8 +31,7 @@
             <h4 class="client-text">Clientes</h4>
             <div class="card-client-container" *ngFor="let c of clientSelected; let i=index">
                 <div class="card-client">
-                    <span><img class="client-image" src="../../../assets/img/user.svg"
-                        alt="logo-appetit"></span>
+                    <span><img class="client-image" src="{{c.image}}" alt="logo-appetit"></span>
                 <span class="client-name">{{c.name}}</span>
                 </div>
                 <hr class="client-line">

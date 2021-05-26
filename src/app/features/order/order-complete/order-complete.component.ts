@@ -14,7 +14,7 @@ export class OrderCompleteComponent implements OnInit {
   }
 
   list() {
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/home/2');
   }
 
   new() {

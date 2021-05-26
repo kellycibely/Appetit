@@ -9,7 +9,9 @@
                 "name": "cuscuz simples",
                 "value" : 2.50,
                 "image" : "../../../assets/img/cuscuz1.svg",
-                "pasta": [ "Arroz", "Milho"]
+                "imageCheck" : "../../../assets/img/cuscuz1.svg",
+                "pasta": [ "Arroz", "Milho"],
+                "status": false
             },
             {
                 "id": 2,
@@ -17,7 +19,9 @@
                 "name": "cuscuz completo",
                 "value" : 3.50,
                 "image" : "../../../assets/img/cuscuzcompleto.svg",
-                "pasta": [ "Arroz", "Milho"]
+                "imageCheck" : "../../../assets/img/cuscuzcompleto.svg",
+                "pasta": [ "Arroz", "Milho"],
+                "status": false
             }
         ]
     },
@@ -31,7 +35,9 @@
                 "name": "pão caseiro",
                 "value" : 2.50,
                 "image" : "../../../assets/img/pao.svg",
-                "pasta": [ "Fina", "grossa"]
+                "imageCheck" : "../../../assets/img/pao.svg",
+                "pasta": [ "Fina", "grossa"],
+                "status": false
             },
             {
                 "id": 4,
@@ -39,7 +45,9 @@
                 "name": "pão caseiro completo",
                 "value" : 3.50,
                 "image" : "../../../assets/img/paocompleto.svg",
-                "pasta": [ "Fina", "grossa"]
+                "imageCheck" : "../../../assets/img/paocompleto.svg",
+                "pasta": [ "Fina", "grossa"],
+                "status": false
             }
         ]
     }
