@@ -8,10 +8,9 @@ import * as client from '../../../fakeResponse/simpleClients.json';
 @Component({
   selector: 'app-order-new',
   templateUrl: './order-new.component.html',
-  styleUrls: ['./order-new.component.css']
+  styleUrls: ['./order-new.component.css'],
 })
 export class OrderNewComponent implements OnInit {
-
   productsList: any = (products as any).default;
   oldClientsList: any = (simpleClients as any).default;
 
@@ -24,8 +23,7 @@ export class OrderNewComponent implements OnInit {
   nextProduct: boolean = false;
   clientSelected: Array<any> = [];
 
-
-  constructor(private route: Router) { }
+  constructor(private route: Router) {}
 
   ngOnInit(): void {
     this.load();
@@ -47,42 +45,41 @@ export class OrderNewComponent implements OnInit {
     const summary = {
       id: productObservation.id,
       idProduct: productObservation.idProduct,
-      description: productObservation.quantity + " x " + productObservation.description,
+      description:
+        productObservation.quantity + ' x ' + productObservation.description,
       image: productObservation.image,
       observation: productObservation.observation,
       price: productObservation.total,
       quantity: productObservation.quantity,
-    }
+    };
 
     this.summaryProduct = summary;
   }
 
   receiveNextProduct(nextProduct) {
     this.nextProduct = nextProduct;
-    console.log(nextProduct)
   }
 
   receiveNextClient(clientSelected) {
-    let count = 0
-    console.log(this.oldClientsList)
+    let count = 0;
     const newListClient: Array<any> = [];
-    clientSelected.forEach(c => {
-      let oldClient = this.oldClientsList.filter(oldClient => oldClient.id === c.id)[0];
-      newListClient.push(oldClient)
+    clientSelected.forEach((c) => {
+      let oldClient = this.oldClientsList.filter(
+        (oldClient) => oldClient.id === c.id
+      )[0];
+      newListClient.push(oldClient);
     });
     this.clientSelected = newListClient;
-    console.log(this.clientSelected)
   }
 
   load() {
-    this.resetProduct.forEach(p => {
-      p.variation.forEach(v => {
+    this.resetProduct.forEach((p) => {
+      p.variation.forEach((v) => {
         v.status = false;
       });
     });
-    this.resetClient.forEach(c => {
+    this.resetClient.forEach((c) => {
       c.imageCheck = c.image;
     });
   }
-
 }
