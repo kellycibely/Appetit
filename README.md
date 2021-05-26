@@ -1,27 +1,116 @@
-# Appetit
+# Appetit-app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.12.
+## Resumo
 
-## Development server
+Sistema de solicitações de pedidos em um café fictício desenvolvido em Angular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Fluxo da Aplicação
 
-## Code scaffolding
+1. **Tela de Login** - Tela para acessar o sistema onde o usuário entra por meio de login e senha.
+2. **Tela de lista de pedidos efetuados** - Tela que lista os pedidos efetuados agrupando os mesmos por dia da semana.
+3. **Tela de detalhamentos de pedidos** - Tela que detalha os pedidos de um cliente selecionado na listagem.
+4. **Tela de Novo pedido** - Tela inicial para o fluxo do pedido, possuindo um resumo do pedido que esta sendo
+   realizado.
+5. **Tela de seleção de produto** - Tela onde o usuário seleciona o produto, podndo buscar pelos produtos selecionados.
+6. **Tela de Detalhamento do produto** - Tela que realiza o detalhamento do produto selecionado com opções de massa e
+   observação.
+7. **Tela de seleção de clientes** - Tela para selecionar os clientes que realizaram o pedido.
+8. **Tela de informações do pedido** - Tela onde é adicionado informações referentes ao pedido, como status de pagamento
+   e data do pedido.
+9. **Tela de feedback do pedido** - Tela onde é informado se o pedido foi realizado com sucesso.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instruções para Teste
 
-## Build
+**Usuário de acesso:** Login e senha de conta RevGás para configurar a máquina a ser utilizada pelo cliente.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Homologação:
+  link [http://localhost:4200](http://localhost:4200)
 
-## Running unit tests
+>       login: qualquer email em um formato válido ex: example@gmail.com
+>       senha: qualquer senha
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Estrutura do Projeto
 
-## Running end-to-end tests
+```
+|-- node_modules                    - bibliotecas
+|-- src                             - pasta de arquivos fonte JS do projeto
+|   |-- app                         - componentes utilizados pelo projeto
+|   |   |--fakeResponse             - pasta contendo os arquivos .json utilizados para simular responses de api 
+|   |   |--features                 - pasta contendo o módulo interno da aplicação 
+|   |   |  |-- home                 - componente responsável pela listagem de pedidos
+|   |   |  |-- model                - pasta contendo as interfaces dos objetos utlizadas
+|   |   |  |-- order                - pasta contendo responsáveis por montarem o fluxo de pedidos
+|   |   |  |-- ui                   - pasta contendo darquivos compartilhados entre os componentes
+|   |   |--login                    - pasta contendo o componentes de login 
+|   |   |--ui                       - pasta contendo arquivos de configurações compartilhados entre os componentes
+|   |   |--app.component.css        - arquivo de css do componentes inicial
+|   |   |--app.component.html       - arquivo de html do componentes inicial
+|   |   |--app.component.spec.ts    - arquivo de teste do componentes inicial
+|   |   |--app.component.ts         - arquivo de logica interna de componente inicial
+|   |   |--app.module.ts            - arquivo de modulo de componente inicial
+|   |   |--app.-routing-module.ts   - arquivo contendo as rotas da aplicação
+|   |-- assets                      - pasta 'assets', de arquivos como imagens e scripts
+|   |   |-- img                     - pasta de arquivos de imagens
+|   |   |-- icons                   - pasta de icones
+|   |   |-- css                     - pasta com arquivo reset.css
+|   |-- environments                - arquivos de configurações
+|   |-- index.html                  - html principal
+|   |-- main.ts                     - rotas da aplicação
+|   |-- polyfills.ts                - arquivo de urls da aplicação
+|   |-- stule.cc                    - arquivo css com configurações padrões
+|-- editorconfig                    -
+|-- .gitignore                      -
+|-- .angular.json                   -
+|-- .browserslist                   -
+|-- .karma.conf.js                  -
+|-- package.json                    - Configuração do projeto
+|-- package-lock.json               -
+|-- README.md                       - Documentação do App
+|-- tsconfig.app.json               -
+|-- tsconfig.json                   -
+|-- tsconfig.spec.json              -
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Compilando o App
 
-## Further help
+1. Clone esse repositório
+2. Instale as dependências
+3. Rode o comando abaixo dentro da pasta do projeto.
+    ```bash
+    npm install
+    ```
+6. Compile o projeto
+    ```bash
+    npm run build
+    ```
+7. Inicializar o servidor de deploy
+    ```bash
+    npm run serve
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Dependências
+
+- [nodejs](https://nodejs.org/)
+- [@angular/cli](https://angular.io/cli)
+- [@angular/material](https://material.angular.io/guide/getting-started)
+- [@angular/moment](https://snyk.io/advisor/npm-package/angular-moment)
+- [@angular/flex-layout](https://www.npmjs.com/package/@angular/flex-layout)
+
+    ```bash
+    npm install -g @angular/cli
+    ```
+    ```bash
+    ng add @angular/material
+    ```
+    ```bash
+    npm install angular-moment
+    ```
+    ```bash
+    npm i @angular/flex-layout
+    ```
+
+
+
+## Comandos disponíveis
+
+- `npm run start`: Inicia um servidor de desenvolvimento local
