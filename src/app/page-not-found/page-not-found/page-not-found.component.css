@@ -1,0 +1,41 @@
+.container {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.img {
+  margin-top: 10%;
+  width: 400px;
+}
+
+.text {
+  font-size: 80px;
+  margin-top: 1rem;
+  color: #fd893f;
+}
+
+.login-button {
+  padding: 15px;
+  width: 50%;
+  border-radius: 100px;
+  border: none;
+  background: #ff8822;
+  margin-top: 5%;
+
+  /* text */
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.btn-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,216 +1,216 @@
 .container {
-    padding-left: 40px;
-    width: auto;
-    height: 100%;
-    padding: 0;
+  padding-left: 40px;
+  width: auto;
+  height: 100%;
+  padding: 0;
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .resume {
-    width: 50%;
-    background-color: #ffffff;
-    display: block;
-    background-image: url("../../../../assets/img/chef.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 300px 500px;
+  width: 50%;
+  background-color: #ffffff;
+  display: block;
+  background-image: url("../../../../assets/img/chef.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px 500px;
 }
 
 .new-order {
-    width: 50%;
-    display: block;
+  width: 50%;
+  display: block;
 }
 
 .img-user-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1rem;
-    margin-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-right: 40px;
 }
 
 .user-name {
-    margin-bottom: 8px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    /* identical to box height, or 150% */
+  margin-bottom: 8px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
 
-    /* Black 0.88% */
+  /* Black 0.88% */
 
-    color: rgba(0, 0, 0, 0.88);
+  color: rgba(0, 0, 0, 0.88);
 }
 
 .line {
-    width: 228px;
-    height: 2px;
-    background: #ff8822;
-    margin-left: 0;
+  width: 228px;
+  height: 2px;
+  background: #ff8822;
+  margin-left: 0;
 }
 
 .user-name-container {
-    margin-top: 5rem;
-    margin-left: 40px;
+  margin-top: 5rem;
+  margin-left: 40px;
 }
 
 .sub-title {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
 
-    color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.54);
 
-    text-align: center;
-    margin-left: -10%;
-    margin-top: 89%;
+  text-align: center;
+  margin-left: -10%;
+  margin-top: 89%;
 }
 
 .img-user-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1rem;
-    margin-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-right: 40px;
 }
 
 .new-order {
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
 .title-order-container {
-    margin-top: 2rem;
-    margin-left: 40px;
+  margin-top: 2rem;
+  margin-left: 40px;
 }
 
 .subtitle-new-order {
-    margin-top: 3rem;
-    width: 80%;
+  margin-top: 3rem;
+  width: 80%;
 
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 
-    color: rgba(0, 0, 0, 0.56);
+  color: rgba(0, 0, 0, 0.56);
 }
 
 .progress-container {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 
-    color: rgba(0, 0, 0, 0.64);
+  color: rgba(0, 0, 0, 0.64);
 
-    margin-top: 1rem;
-    margin-left: 40px;
-    margin-right: 10px;
+  margin-top: 1rem;
+  margin-left: 40px;
+  margin-right: 10px;
 }
 
 /* progresss bar */
 .wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .progress-bar {
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .progress-bar-fill {
-    display: block;
-    height: 15px;
-    background-color: #ff8822;
-    border-radius: 10px;
-    transition: width 100ms ease-in-out;
+  display: block;
+  height: 15px;
+  background-color: #ff8822;
+  border-radius: 10px;
+  transition: width 100ms ease-in-out;
 }
 
 .product-form {
-    margin-left: 40px;
-    margin-top: 1rem;
-    margin-right: 1rem;
+  margin-left: 40px;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 .form-title {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
 
-    color: rgba(0, 0, 0, 0.88);
+  color: rgba(0, 0, 0, 0.88);
 }
 
 /* Border */
 
 ::ng-deep .mat-form-field {
-    color: #ff8822 !important;
+  color: #ff8822 !important;
 }
 
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
-    color: #ff884d !important;
+  color: #ff884d !important;
 }
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
-    background-color: #ff884d;
+  background-color: #ff884d;
 }
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-required-marker {
-    color: #ff884d;
+  color: #ff884d;
 }
 ::ng-deep .mat-form-field.mat-focused .mat-input-element {
-    color: #ff884d;
+  color: #ff884d;
 }
 
 /* variations */
 .variation {
-    width: auto;
+  width: auto;
 
-    margin-right: 1rem;
-    margin-top: 1rem;
-    margin-left: 40px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-left: 40px;
 
-    padding: 5px;
+  padding: 5px;
 }
 
 .variation-img {
-    margin-right: 5%;
+  margin-right: 5%;
 }
 .variation-name {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
 
-    color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.87);
 
-    width: 75%;
+  width: 75%;
 }
 
 .variation-value {
-    color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.54);
 }
 .variation-container {
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
 }
 
 .variarion-line {
-    background: rgba(0, 0, 0, 0.08);
-    height: 0.5px;
+  background: rgba(0, 0, 0, 0.08);
+  height: 0.5px;
 }
 .line-products {
-    height: 8px;
-    background: rgba(0, 0, 0, 0.08);
+  height: 8px;
+  background: rgba(0, 0, 0, 0.08);
 }
