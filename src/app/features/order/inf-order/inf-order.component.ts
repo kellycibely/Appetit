@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class InfOrderComponent implements OnInit {
 
+  numberPass = 1;
   size = 33.3;
 
   productSelected: string;
@@ -24,30 +25,32 @@ export class InfOrderComponent implements OnInit {
   set summaryProduct(summaryProduct: string) {
     if (summaryProduct) {
       this._summaryProduct = summaryProduct;
-    } 
+    }
   }
 
-    constructor() { }
+  constructor() { }
 
-    ngOnInit(): void {
-  
-    }
-
-    receiveProduct(variation) {
-      this.productSelected = variation;
-      this.product.emit(variation);
-    }
-
-    receiveNextProduct(nextProduct) {
-      this._nextProduct = nextProduct;
-      this.size = 66.6 ;
-      this.nextProduct.emit(nextProduct);
-    }
-
-    receiveNextClient(clientSelected) {
-      this._clientSelected = clientSelected;
-      this.size = 100 ;
-      this.clientSelected.emit(clientSelected);
-    }
+  ngOnInit(): void {
 
   }
+
+  receiveProduct(variation) {
+    this.productSelected = variation;
+    this.product.emit(variation);
+  }
+
+  receiveNextProduct(nextProduct) {
+    this._nextProduct = nextProduct;
+    this.size = 66.6;
+    this.numberPass = 2;
+    this.nextProduct.emit(nextProduct);
+  }
+
+  receiveNextClient(clientSelected) {
+    this._clientSelected = clientSelected;
+    this.size = 100;
+    this.numberPass = 3;
+    this.clientSelected.emit(clientSelected);
+  }
+
+}

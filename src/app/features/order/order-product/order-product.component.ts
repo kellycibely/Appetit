@@ -12,9 +12,14 @@ import * as products from '../../../fakeResponse/products.json';
 export class OrderProductComponent implements OnInit {
 
   _summaryProduct: any;
+  term: string;
   productsList: any = (products as any).default;
+  oldList: any;
 
-  constructor(private route: Router) { }
+  constructor(private route: Router) {
+    const oldproductList = this.productsList;
+    this.oldList = oldproductList;
+  }
 
   @Output() product = new EventEmitter();
   @Output() nextProduct = new EventEmitter();
@@ -43,6 +48,16 @@ export class OrderProductComponent implements OnInit {
   }
 
   nextPage() {
-    this.nextProduct.emit(true);     
+    this.nextProduct.emit(true);
+  }
+
+  loadList() {
+    const productsList = this.productsList.filter(p => p.type.toLowerCase() == this.term.toLowerCase())
+    if (productsList.length >= 1) {
+      this.productsList = productsList;
+    }
+    if (this.term == "") {
+      this.productsList = this.oldList;
+    }
   }
 }

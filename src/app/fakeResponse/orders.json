@@ -9,7 +9,7 @@
                 "clientId": 1,
                 "date": "13/05/2019",
                 "name": "Justine Marshall",
-                "avatar": "https://svgshare.com/i/Kkn.svg",
+                "avatar": "../../../assets/img/user1.svg",
                 "description": "cuscuz com calabresa, suco de laranja",
                 "value": 3.5
             },
@@ -18,7 +18,7 @@
                 "clientId": 2,
                 "date": "13/05/2019",
                 "name": "Bairam Frootan",
-                "avatar": "https://svgshare.com/i/Kn8.svg",
+                "avatar": "../../../assets/img/user2.svg",
                 "description": "cuscuz com calabresa, suco de laranja",
                 "value": 7.9
             },
@@ -26,7 +26,7 @@
                 "id": 3,
                 "clientId": 3,
                 "name": "Tua Manuera",
-                "avatar": "https://svgshare.com/i/Knq.svg",
+                "avatar": "../../../assets/img/user3.svg",
                 "date": "13/05/2019",
                 "description": "2x bolo frito, café c/ leite.",
                 "value": 4.5
@@ -42,7 +42,7 @@
                 "id": 3,
                 "clientId": 1,
                 "name": "Justine Marshall",
-                "avatar": "https://svgshare.com/i/Km8.svg",
+                "avatar": "../../../assets/img/user4.svg",
                 "date": "13/05/2019",
                 "description": "2x sanduíche, vitamina de goiaba.",
                 "value": 5.0
@@ -51,7 +51,7 @@
                 "id": 2,
                 "clientId": 2,
                 "name": "Bairam Frootan",
-                "avatar": "https://svgshare.com/i/Kko.svg",
+                "avatar": "../../../assets/img/user.svg",
                 "date": "13/05/2019",
                 "description": "cuscuz com calabresa, suco de maracujá",
                 "value": 3.5

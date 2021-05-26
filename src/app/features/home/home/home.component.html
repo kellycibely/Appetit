@@ -29,7 +29,7 @@
 
                 <div class="card" *ngFor="let sale of order.orders" (click)="detail(sale.clientId)">
                     <div class="card-img">
-                        <img class="home-logo" src="../../../assets/img/user.svg" alt="logo-appetit">
+                        <img class="home-logo" src="{{sale.avatar}}" alt="logo-appetit">
                     </div>
                     <div class="card-sale-description">
                         <h6 class="card-client-name">

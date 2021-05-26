@@ -6,14 +6,16 @@
 </div>
 
 <div class="progress-container">
-    <p>Passo 1 de 3</p>
+    <p>Passo {{numberPass}} de 3</p>
 
     <div class="wrapper">
         <div class="progress-bar">
-            <span class="progress-bar-fill" [ngStyle]="{'width': size + '%'}" ></span>
+            <span class="progress-bar-fill" [ngStyle]="{'width': size + '%'}"></span>
         </div>
     </div>
 </div>
-<app-order-product *ngIf="!_nextProduct" (product)="receiveProduct($event)" (nextProduct)="receiveNextProduct($event)" [summaryProduct]=_summaryProduct></app-order-product>
-<app-order-clients *ngIf="_nextProduct && (size != 100)" (_clientSelected)="receiveNextClient($event)"></app-order-clients>
+<app-order-product *ngIf="!_nextProduct" (product)="receiveProduct($event)" (nextProduct)="receiveNextProduct($event)"
+    [summaryProduct]=_summaryProduct></app-order-product>
+<app-order-clients *ngIf="_nextProduct && (size != 100)" (_clientSelected)="receiveNextClient($event)">
+</app-order-clients>
 <app-order-status *ngIf="size == 100"></app-order-status>
