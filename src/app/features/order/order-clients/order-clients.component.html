@@ -17,10 +17,10 @@
         </div>
         <hr *ngIf="i +1 != c.length" class="line">
     </div>
-
-    <div *ngIf="clientSelected.length >= 1" class="actions" (click)="next()">
-        <span class="client-quantity">{{clientSelected.length}} clientes selecionados</span>
-        <span class="btn_next"> Avançar  <img matPrefix class="icon-next" src="../../../assets/icons/shape.svg" alt="logo-appetit"></span>
-    </div>
-
 </section>
+
+<div *ngIf="clientSelected.length >= 1" class="actions" (click)="next()">
+    <span class="client-quantity">{{clientSelected.length}} clientes selecionados</span>
+    <span class="btn_next"> Avançar <img matPrefix class="icon-next" src="../../../assets/icons/shape.svg"
+            alt="logo-appetit"></span>
+</div>

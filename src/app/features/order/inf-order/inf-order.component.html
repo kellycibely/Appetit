@@ -15,4 +15,5 @@
     </div>
 </div>
 <app-order-product *ngIf="!_nextProduct" (product)="receiveProduct($event)" (nextProduct)="receiveNextProduct($event)" [summaryProduct]=_summaryProduct></app-order-product>
-<app-order-clients *ngIf="_nextProduct" (_clientSelected)="receiveNextClient($event)"></app-order-clients>
+<app-order-clients *ngIf="_nextProduct && (size != 100)" (_clientSelected)="receiveNextClient($event)"></app-order-clients>
+<app-order-status *ngIf="size == 100"></app-order-status>

@@ -1,0 +1,106 @@
+.status-container {
+    margin-left: 40px;
+    margin-top: 2rem;
+}
+
+.status-title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(0, 0, 0, 0.88);
+
+    margin-top: 10px;
+}
+
+.card-check-container {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.card-check {
+    padding-top: 20px;
+    padding-right: 68%;
+    width: 25%;
+    padding-bottom: 20px;
+    padding-left: 11px;
+    margin-top: 20px;
+
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+}
+
+.datapiker {
+    width: 100%;
+}
+
+.data {
+    margin-top: 2rem;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #ff8822 !important;
+}
+
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #ff8822 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: #ff8822 !important;
+}
+
+::ng-deep .mat-form-field-label {
+    /*change color of label*/
+    color: #ff8822 !important;
+}
+
+mat-datepicker-toggle {
+    color: #ff8822 !important;
+}
+
+::ng-deep .mat-calendar-body-selected {
+    background-color: #ff8822;
+    color: #fff;
+}
+
+::ng-deep .mat-form-field-wrapper {
+    width: 200%;
+    position: relative;
+} 
+
+.md-datepicker-input-container {
+    width: 300px;
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-button {
+    padding: 15px;
+    width: 50%;
+    margin-right: 15%;
+    border-radius: 100px;
+    border: none;
+    background: #ff8822;
+    margin-top: 5%;
+
+    /* text */
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.login-button:focus {
+    outline-style: none;
+}

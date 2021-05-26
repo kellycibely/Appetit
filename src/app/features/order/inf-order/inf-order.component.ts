@@ -11,7 +11,7 @@ export class InfOrderComponent implements OnInit {
 
   productSelected: string;
   _nextProduct: any;
-  _clientSelected: any;
+  _clientSelected: Array<any> = [];
 
   @Output() product = new EventEmitter();
   _summaryProduct: any;
