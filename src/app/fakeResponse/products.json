@@ -5,6 +5,7 @@
         "variation": [
             {
                 "id": 1,
+                "idProduct": 1,
                 "name": "cuscuz simples",
                 "value" : 2.50,
                 "image" : "../../../assets/img/cuscuz1.svg",
@@ -12,6 +13,7 @@
             },
             {
                 "id": 2,
+                "idProduct": 1,
                 "name": "cuscuz completo",
                 "value" : 3.50,
                 "image" : "../../../assets/img/cuscuzcompleto.svg",
@@ -25,6 +27,7 @@
         "variation": [
             {
                 "id": 3,
+                "idProduct": 2,
                 "name": "pão caseiro",
                 "value" : 2.50,
                 "image" : "../../../assets/img/pao.svg",
@@ -32,6 +35,7 @@
             },
             {
                 "id": 4,
+                "idProduct": 2,
                 "name": "pão caseiro completo",
                 "value" : 3.50,
                 "image" : "../../../assets/img/paocompleto.svg",

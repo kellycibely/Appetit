@@ -1,3 +1,4 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
@@ -24,10 +25,6 @@ export class OrderProductDataComponent implements OnInit {
     console.log(this.productSelected);
   }
 
-  next() {
-    
-  }
-
   remove() {
     if (this.quantity != 1) {
       this.quantity--;
@@ -46,6 +43,9 @@ export class OrderProductDataComponent implements OnInit {
 
   select() {
     const select = {
+      id: this.productSelected.id,
+      idProduct: this.productSelected.idProduct,
+      image: this.productSelected.image,
       description: this.productSelected.name,
       quantity: this.quantity,
       total : this.total,
@@ -54,7 +54,6 @@ export class OrderProductDataComponent implements OnInit {
     }
 
     this.productObservation.emit(select);
-    // console.log(select);
   }
 
 }

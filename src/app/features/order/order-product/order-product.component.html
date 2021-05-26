@@ -22,4 +22,9 @@
         </div>
         <hr *ngIf="i +1 != productsList.length" class="line-products">
     </div>
+
+    <div *ngIf="_summaryProduct" class="actions" (click)="nextPage()">
+        <span class="price">{{_summaryProduct.price | currency : 'R$'}}</span>
+        <span class="btn_next"> Avançar  <img matPrefix class="icon-next" src="../../../assets/icons/shape.svg" alt="logo-appetit"></span>
+    </div>
 </section>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { EventEmitter } from '@angular/core';
 
@@ -11,16 +11,37 @@ import * as products from '../../../fakeResponse/products.json';
 })
 export class OrderProductComponent implements OnInit {
 
+  _summaryProduct: any;
   productsList: any = (products as any).default;
 
   constructor(private route: Router) { }
 
   @Output() product = new EventEmitter();
+  @Output() nextProduct = new EventEmitter();
+  @Input() set
+    summaryProduct(summaryProduct: any) {
+    if (summaryProduct) {
+      this._summaryProduct = summaryProduct;
+      this.productsList.forEach(product => {
+        if (product.id == this._summaryProduct.idProduct) {
+          product.variation.forEach(variation => {
+            if (variation.id == this._summaryProduct.id) {
+              variation.image = "../../../assets/icons/checked.svg";
+            }
+          });
+        }
+      });
+    }
+  }
 
   ngOnInit(): void {
   }
-  
+
   detail(variation) {
     this.product.emit(variation);
+  }
+
+  nextPage() {
+    this.nextProduct.emit(true);     
   }
 }

@@ -14,6 +14,9 @@ export class OrderNewComponent implements OnInit {
 
   productSelected: any;
 
+  summaryProduct: any;
+  nextProduct: boolean = false;
+
   constructor(private route: Router) { }
 
   ngOnInit(): void {
@@ -29,7 +32,25 @@ export class OrderNewComponent implements OnInit {
   }
 
   receiveproductObservation(productObservation) {
-    console.log(productObservation);
+    this.createSummaryProduct(productObservation);
+  }
+
+  createSummaryProduct (productObservation) {
+    const summary = {
+      id: productObservation.id,
+      idProduct: productObservation.idProduct,
+      description: productObservation.quantity + " x " + productObservation.description,
+      image: productObservation.image,
+      observation: productObservation.observation,
+      price: productObservation.total,
+    }
+
+    this.summaryProduct = summary; 
+  }
+
+  receiveNextProduct(nextProduct) {
+    this.nextProduct = nextProduct;
+    console.log(nextProduct)
   }
 
 }
