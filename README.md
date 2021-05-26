@@ -21,7 +21,7 @@ Sistema de solicitações de pedidos em um café fictício desenvolvido em Angul
 
 ## Instruções para Teste
 
-**Usuário de acesso:** Login e senha de conta RevGás para configurar a máquina a ser utilizada pelo cliente.
+**Usuário de acesso:** Login e senha da conta para acessar o sistema.
 
 - Homologação:
   link [http://localhost:4200](http://localhost:4200)
@@ -35,13 +35,13 @@ Sistema de solicitações de pedidos em um café fictício desenvolvido em Angul
 |-- node_modules                    - bibliotecas
 |-- src                             - pasta de arquivos fonte JS do projeto
 |   |-- app                         - componentes utilizados pelo projeto
-|   |   |--fakeResponse             - pasta contendo os arquivos .json utilizados para simular responses de api 
-|   |   |--features                 - pasta contendo o módulo interno da aplicação 
+|   |   |--fakeResponse             - pasta contendo os arquivos .json utilizados para simular responses de api
+|   |   |--features                 - pasta contendo o módulo interno da aplicação
 |   |   |  |-- home                 - componente responsável pela listagem de pedidos
 |   |   |  |-- model                - pasta contendo as interfaces dos objetos utlizadas
 |   |   |  |-- order                - pasta contendo responsáveis por montarem o fluxo de pedidos
 |   |   |  |-- ui                   - pasta contendo darquivos compartilhados entre os componentes
-|   |   |--login                    - pasta contendo o componentes de login 
+|   |   |--login                    - pasta contendo o componentes de login
 |   |   |--ui                       - pasta contendo arquivos de configurações compartilhados entre os componentes
 |   |   |--app.component.css        - arquivo de css do componentes inicial
 |   |   |--app.component.html       - arquivo de html do componentes inicial
@@ -76,17 +76,17 @@ Sistema de solicitações de pedidos em um café fictício desenvolvido em Angul
 1. Clone esse repositório
 2. Instale as dependências
 3. Rode o comando abaixo dentro da pasta do projeto.
-    ```bash
-    npm install
-    ```
-6. Compile o projeto
-    ```bash
-    npm run build
-    ```
-7. Inicializar o servidor de deploy
-    ```bash
-    npm run serve
-    ```
+   ```bash
+   npm install
+   ```
+4. Compile o projeto
+   ```bash
+   npm run build
+   ```
+5. Inicializar o servidor de deploy
+   ```bash
+   npm run serve
+   ```
 
 ## Dependências
 
@@ -96,20 +96,21 @@ Sistema de solicitações de pedidos em um café fictício desenvolvido em Angul
 - [@angular/moment](https://snyk.io/advisor/npm-package/angular-moment)
 - [@angular/flex-layout](https://www.npmjs.com/package/@angular/flex-layout)
 
-    ```bash
-    npm install -g @angular/cli
-    ```
-    ```bash
-    ng add @angular/material
-    ```
-    ```bash
-    npm install angular-moment
-    ```
-    ```bash
-    npm i @angular/flex-layout
-    ```
+  ```bash
+  npm install -g @angular/cli
+  ```
 
+  ```bash
+  ng add @angular/material
+  ```
 
+  ```bash
+  npm install angular-moment
+  ```
+
+  ```bash
+  npm i @angular/flex-layout
+  ```
 
 ## Comandos disponíveis
 
