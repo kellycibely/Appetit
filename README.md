@@ -18,6 +18,7 @@ Sistema de solicitações de pedidos em um café fictício desenvolvido em Angul
 8. **Tela de informações do pedido** - Tela onde é adicionado informações referentes ao pedido, como status de pagamento
    e data do pedido.
 9. **Tela de feedback do pedido** - Tela onde é informado se o pedido foi realizado com sucesso.
+10. **Tela 404** - Tela redirecionada para rotas não mapeadas.
 
 ## Instruções para Teste
 
@@ -42,6 +43,7 @@ Sistema de solicitações de pedidos em um café fictício desenvolvido em Angul
 |   |   |  |-- order                - pasta contendo responsáveis por montarem o fluxo de pedidos
 |   |   |  |-- ui                   - pasta contendo darquivos compartilhados entre os componentes
 |   |   |--login                    - pasta contendo o componentes de login
+|   |   |--page-not-found           - pasta contendo o componentes de page-not-fount(rota 404)
 |   |   |--ui                       - pasta contendo arquivos de configurações compartilhados entre os componentes
 |   |   |--app.component.css        - arquivo de css do componentes inicial
 |   |   |--app.component.html       - arquivo de html do componentes inicial
