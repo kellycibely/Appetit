@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-order-status',
@@ -6,14 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-status.component.css']
 })
 export class OrderStatusComponent implements OnInit {
-  
+
   status: any;
   date = new Date();
-  test = "#ff8822";
-  
-  constructor() { }
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  next() {
+    this.router.navigateByUrl('/sale/complete');
   }
 
 }

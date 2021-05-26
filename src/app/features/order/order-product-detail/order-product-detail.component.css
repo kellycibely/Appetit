@@ -95,3 +95,13 @@
     margin-left: 40px;
 }
 
+@media screen and (max-width: 800px) {
+    .title-order-container {
+        margin-top: 1rem;
+        margin-left: 30px;
+    }
+
+    .card {
+        margin-left: 10px !important;
+    }
+}

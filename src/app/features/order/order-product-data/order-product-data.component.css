@@ -111,3 +111,32 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .card {
+        margin-left: 10px !important;
+    }
+
+    .card-pasta {
+        margin-left: 10px !important;
+    }
+
+    .card-obs {
+        margin-left: 10px;
+    }
+
+    .obs {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 19%;
+    }
+
+
+    .actions {
+        width: 100%;
+    }
+
+    .btn_next{
+        margin-right: 1%;
+    }
+
+}

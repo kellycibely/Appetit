@@ -1,0 +1,97 @@
+::ng-deep .mat-form-field-wrapper {
+    width: 100%;
+    position: relative;
+  } 
+  
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.img-user-container {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-size {
+    margin-top: 16%;
+    height: 250px;
+}
+
+.text {
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.butons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-new {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    background: #ff8822;
+
+    border: none;
+    border-radius: 100px;
+
+    width: 328px;
+    height: 48px;
+
+    margin-left: 15px;
+}
+
+.btn-list {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    background: #ffffff;
+
+    border: 2px solid rgba(0, 0, 0, 0.88);
+    box-sizing: border-box;
+    border-radius: 100px;
+
+    width: 328px;
+    height: 48px;
+
+    margin-right: 15px;
+}

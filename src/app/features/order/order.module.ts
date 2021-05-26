@@ -12,6 +12,7 @@ import { OrderProductDetailComponent } from './order-product-detail/order-produc
 import { OrderProductDataComponent } from './order-product-data/order-product-data.component';
 import { OrderClientsComponent } from './order-clients/order-clients.component';
 import { OrderStatusComponent } from './order-status/order-status.component';
+import { OrderCompleteComponent } from './order-complete/order-complete.component';
 
 
 export const routes = [
@@ -30,10 +31,17 @@ export const routes = [
       breadcrumb: 'new',
     },
   },
+  {
+    path: 'complete',
+    component: OrderCompleteComponent,
+    data: {
+      breadcrumb: 'complete',
+    },
+  },
 ];
 
 @NgModule({
-  declarations: [OrderComponent, OrderNewComponent, OrderProductComponent, InfOrderComponent, OrderProductDetailComponent, OrderProductDataComponent, OrderClientsComponent, OrderStatusComponent],
+  declarations: [OrderComponent, OrderNewComponent, OrderProductComponent, InfOrderComponent, OrderProductDetailComponent, OrderProductDataComponent, OrderClientsComponent, OrderStatusComponent, OrderCompleteComponent],
   imports: [CommonModule, RouterModule, RouterModule.forChild(routes), MyCommonModule],
 })
 export class OrderModule { }

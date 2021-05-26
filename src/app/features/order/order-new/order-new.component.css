@@ -338,3 +338,17 @@
 
     color: rgba(0, 0, 0, 0.88);
 }
+
+@media screen and (max-width: 800px) {
+    .summary-order {
+        display: none;
+    }
+
+    .resume {
+        display: none;
+    }
+
+    .new-order {
+        width: 100%;
+    }
+}

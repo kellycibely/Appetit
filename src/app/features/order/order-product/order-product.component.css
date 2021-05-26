@@ -267,3 +267,13 @@
     
     padding: 10px;
 }
+
+@media screen and (max-width: 800px) { 
+    .actions {
+        width: 100%;
+    }
+
+    .btn_next {
+        margin-right: 0%;
+    }
+}

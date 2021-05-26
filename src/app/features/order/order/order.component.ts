@@ -13,6 +13,7 @@ export class OrderComponent implements OnInit {
   id: number;
   private sub: any;
   client: Client;
+  term: string;
   
   clientsList: any = (clients as any).default;
 
@@ -29,5 +30,6 @@ export class OrderComponent implements OnInit {
   back() {
     this.router.navigateByUrl('home');
   }
+
 
 }

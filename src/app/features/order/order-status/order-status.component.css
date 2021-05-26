@@ -104,3 +104,17 @@ mat-datepicker-toggle {
 .login-button:focus {
     outline-style: none;
 }
+
+@media screen and (max-width: 800px) { 
+    ::ng-deep .mat-form-field-wrapper {
+        width: 150%;
+    } 
+
+    .btn_next {
+        margin-right: 0%;
+    }
+
+    .status-container {
+        margin-bottom: 30px;
+    }
+}
